@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos | Ateliê Vó Linda</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Nossos Produtos</h1>
+        <a href="index.html">Voltar para Home</a>
+    </header>
+    
+    <main id="produtos">
+        <h2>Produtos</h2>
+        <div class="carousel-container">
+            <div class="carousel">
+                <img src="imagens/macrame-01.png" alt="Painel de Macramê" onclick="expandirImagem(this)">
+                <img src="imagens/porta-chave_01.png" alt="Escultura em Madeira" onclick="expandirImagem(this)">
+                <img src="imagens/macrame-02.png" alt="Decoração de Macramê" onclick="expandirImagem(this)">
+            </div>
+        </div>
+    </main>
+    
+    <button id="finalizar" onclick="finalizarCompra()">Finalizar Compra</button>
+    
+    <script src="script.js"></script>
+</body>
+</html>

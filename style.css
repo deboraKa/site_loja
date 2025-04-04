@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FAF3F0;
+    color: #6D3D14;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #FAD2D2;
+    padding: 20px;
+}
+
+.logo {
+    width: 150px;
+    border-radius: 50%;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.sobre, .carousel-container {
+    padding: 20px;
+    margin: 20px auto;
+    background-color: #FFE8E8;
+    border-radius: 10px;
+    width: 90%;
+}
+
+.carousel img {
+    width: 30%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.carousel img:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    margin-top: 20px;
+    background-color: #FAD2D2;
+    padding: 10px;
+}
