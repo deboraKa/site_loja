@@ -1,6 +1,7 @@
+/* Estilos gerais */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #FAF3F0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom, #FAF3F0, #FAD2D2);
     color: #6D3D14;
     text-align: center;
     margin: 0;
@@ -10,44 +11,146 @@ body {
 header {
     background-color: #FAD2D2;
     padding: 20px;
+    border-bottom: 3px solid #6D3D14;
+    text-align: center;
 }
 
 .logo {
-    width: 150px;
+    width: 200px;
     border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+.logo:hover {
+    transform: scale(1.1);
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 15px;
+nav ul li a {
+    font-weight: 600;
+    color: #6D3D14;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
 }
 
-.sobre, .carousel-container {
-    padding: 20px;
-    margin: 20px auto;
-    background-color: #FFE8E8;
-    border-radius: 10px;
-    width: 90%;
+nav ul li a:hover {
+    background: #D14B4B;
+    color: #FFF;
 }
 
-.carousel img {
-    width: 30%;
-    border-radius: 10px;
-    cursor: pointer;
+/* Estilização da seção "Sobre" */
+.foto-vo-linda {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s;
-}
-
-.carousel img:hover {
-    transform: scale(1.1);
-}
-
-footer {
     margin-top: 20px;
+    object-fit: cover;
+}
+
+.foto-vo-linda:hover {
+    transform: scale(1.05);
+}
+
+.sobre {
+    max-width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    background: #FFE8E8;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Botões */
+button {
+    background-color: #D14B4B;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #B13C3C;
+}
+
+/* Rodapé */
+footer {
     background-color: #FAD2D2;
-    padding: 10px;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/* Estilos para a página de produtos */
+.grid-produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.produto {
+    display: flex;
+    background: #FFE8E8;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    max-width: 450px;
+    align-items: center;
+}
+
+/* Imagens dos produtos - arredondadas e do mesmo tamanho */
+.produto img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s;
+}
+
+.produto img:hover {
+    transform: scale(1.05);
+}
+
+.info-produto {
+    margin-left: 15px;
+    text-align: left;
+}
+
+.preco {
+    font-size: 18px;
+    font-weight: bold;
+    color: #D14B4B;
+}
+
+/* Botão para voltar */
+.btn-voltar {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 8px 15px;
+    background-color: #6D3D14;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn-voltar:hover {
+    background-color: #B13C3C;
 }

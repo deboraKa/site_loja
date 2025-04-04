@@ -9,16 +9,40 @@
 <body>
     <header>
         <h1>Nossos Produtos</h1>
-        <a href="index.html">Voltar para Home</a>
+        <a href="index.html" class="btn-voltar">Voltar para Home</a>
     </header>
     
     <main id="produtos">
         <h2>Produtos</h2>
-        <div class="carousel-container">
-            <div class="carousel">
-                <img src="imagens/macrame-01.png" alt="Painel de Macramê" onclick="expandirImagem(this)">
-                <img src="imagens/porta-chave_01.png" alt="Escultura em Madeira" onclick="expandirImagem(this)">
-                <img src="imagens/macrame-02.png" alt="Decoração de Macramê" onclick="expandirImagem(this)">
+        <div class="grid-produtos">
+            <div class="produto">
+                <img src="imagens/macrame-01.png" alt="Painel de Macramê">
+                <div class="info-produto">
+                    <h3>Painel de Macramê</h3>
+                    <p>Feito à mão com fios de algodão 100% naturais.</p>
+                    <p class="preco">R$ 120,00</p>
+                    <button onclick="adicionarAoCarrinho('Painel de Macramê', 120.00)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+
+            <div class="produto">
+                <img src="imagens/porta-chave_01.png" alt="Porta-Chave de Madeira">
+                <div class="info-produto">
+                    <h3>Porta-Chave de Madeira</h3>
+                    <p>Esculpido à mão, perfeito para sua decoração.</p>
+                    <p class="preco">R$ 85,00</p>
+                    <button onclick="adicionarAoCarrinho('Porta-Chave de Madeira', 85.00)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+
+            <div class="produto">
+                <img src="imagens/macrame-02.png" alt="Decoração de Macramê">
+                <div class="info-produto">
+                    <h3>Decoração de Macramê</h3>
+                    <p>Peça única para dar um toque especial ao seu ambiente.</p>
+                    <p class="preco">R$ 95,00</p>
+                    <button onclick="adicionarAoCarrinho('Decoração de Macramê', 95.00)">Adicionar ao Carrinho</button>
+                </div>
             </div>
         </div>
     </main>
